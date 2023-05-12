@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/sign-up.js"></script>
+    </head>
+    <body>
+        <div class="side-panel">
+            <img src="./images/sign-up.jpg" alt="Every one is welcome">
+            <div class="logo">
+                <svg fill="#000000" height="256px" width="256px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" xml:space="preserve">
+                    <g id="SVGRepo_iconCarrier"> <g> <path d="M199.95,77.68c32.59,0,63.22,12.69,86.27,35.73c23.04,23.04,35.73,53.68,35.73,86.27s-12.69,63.22-35.73,86.27 c-23.04,23.04-53.68,35.73-86.27,35.73s-63.22-12.69-86.27-35.73c-23.04-23.04-35.73-53.68-35.73-86.27s12.69-63.22,35.73-86.27 C136.72,90.37,167.36,77.68,199.95,77.68 M199.95,62.68c-75.66,0-137,61.34-137,137s61.34,137,137,137s137-61.34,137-137 S275.61,62.68,199.95,62.68L199.95,62.68z"/> <g> <path d="M120.71,159.08h32.47l12.52,48.62l12.43-48.62h32.45v79.91h-20.22v-60.94l-15.58,60.94h-18.3l-15.55-60.94v60.94h-20.22 V159.08z"/> <path d="M279.18,238.99h-20.71v-9.38c-3.09,3.85-6.21,6.6-9.35,8.23c-3.14,1.63-7,2.45-11.58,2.45c-6.1,0-10.89-1.83-14.36-5.48 c-3.47-3.65-5.21-9.28-5.21-16.87V181.1h22.29v31.83c0,3.63,0.67,6.21,2.02,7.74c1.34,1.53,3.23,2.29,5.67,2.29 c2.65,0,4.82-1.02,6.51-3.05c1.69-2.04,2.53-5.69,2.53-10.96V181.1h22.19V238.99z"/> </g> </g> </g>
+                </svg>
+                <p>MUBARSH</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <p>This is  not a real online service! 
+                You know you need something like this in your life to help
+            you realize your deepest dreams.Sign up now to get started.</p>
+            <p>You know you want to.</p>
+            <form action="localhost/post" method="post">
+                <section>
+                    <h2>Lets do this!</h2>
+                    <p>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="firstName" id="first-name" minlength="2" title="Must be atleat 2 characters long">
+                    </p>
+
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="lastName" id="last-name" minlength="2" title="Must be atleast 2 character long">
+                    </p>
+
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="eMail" id="email"
+                        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                        title="Enter valid email address e.g. example@example.com">
+                    </p>
+
+                    <p>
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" name = "phoneNum" id = "phone-num" minlength="12" title="Atleast 12 characters" >
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name = "password" id="password" minlength="8">
+                    </p>
+                    <p>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name = "confirmPassword" id="password" minlength="8">
+                    </p>
+
+                </section>
+                <section>
+                    <button type="submit">Create Account</button>
+                </section>
+            </form>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </body>
+</html>
