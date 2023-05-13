@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Biorhyme-bold";
+    src: url(../fonts/biorhymeexpanded-bold-webfont.woff);
+    src: url(../fonts/biorhymeexpanded-bold-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Biorhyme-regular";
+    src: url(../fonts/biorhymeexpanded-regular-webfont.woff);
+    src: url(../fonts/biorhymeexpanded-regular-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Abel-regular';
+    src: url(../fonts/abel-regular-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Advent-regular';
+    src: url(../fonts/adventpro-regular-webfont.woff);
+}
+
+:root{
+    font-size: 10px;
+    height: 100vh;
+    width: max(100vw,1600px);
+    --buton-color:#73A9AD; 
+    /* min(100vw,2000px); */
+}
+body{
+    display:flex;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Abel-regular';
+    background-color: rgb(245, 245, 245);
+}
+
+.side-panel{
+    position:relative;
+    /* flex:1 0 40%; */
+    width:40%;
+    height: 100%;
+}
+img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+svg{
+    height: 90px;
+    width: 90px;
+}
+.logo{
+    box-sizing: border-box;
+    color: black;
+    background-color: white;
+    opacity: 60%;
+    height: 120px;
+    width: 100%;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 32.3vh;
+}
+.logo>p{
+    font-family: "Biorhyme-regular";
+    box-sizing: border-box;
+    font-size: 3rem;
+    width: auto;
+    height: 100%;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.side-panel>p{
+    position:absolute;
+    top:95vh;
+    width: 100%;
+    color:white;
+    text-align: center;
+    font-size:1.5rem;
+}
+.side-panel a:link{
+ color:white;
+}
+.main-content{
+    /* padding:20% 0 20% 0; */
+    align-self: center;
+    width: 60%;
+    height: 50%;
+}
+.main-content>p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    width:47ch;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+label{
+    text-transform: uppercase;
+}
+form{
+    width:100%;
+    height: auto;
+}
+.input-section{
+    /* margin-left: 50px; */
+    width: 100%;
+    height: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: white;
+    box-shadow: 5px 5px rgb(235, 235, 235);
+    color:rgb(82, 82, 82);
+}
+form h2{
+    /* margin-left: 50px; */
+    /* flex:1 0 100%; */
+    width:100%;
+    font-size: 2.5rem;
+    margin:10px auto 15px 50px;
+}
+section>p{
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 30%;
+    flex:0 0 auto;
+    /* margin-right: 10%; */
+    display:flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:rgb(63, 62, 62);
+}
+input{
+    appearance: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+}
+input:focus{
+    border: 2px solid rgb(138, 138, 248);
+    box-shadow: 3px 3px 3px rgb(209, 208, 208);
+}
+button{
+    font-size: 2rem;
+    appearance: none;
+    height: 50px;
+    width: 25%;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: var(--buton-color);
+    border:none;
+    box-shadow: 2px 2px 2px rgb(65, 64, 64);
+}
+button:focus{
+    box-shadow: inset 2px 2px 2px rgb(65, 64, 64);
+}
+
+p.existing{
+    margin-left: 50px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+p.existing > a:link{
+    color: var(--buton-color);
+    text-decoration: none;
+}
