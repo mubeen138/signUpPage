@@ -150,6 +150,7 @@ section>p{
 }
 input{
     appearance: none;
+    outline-style: none;
     box-sizing: border-box;
     border-radius: 5px;
     width: 250px;
